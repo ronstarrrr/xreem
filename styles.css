@@ -29,7 +29,7 @@ body {
   width: 100%;
   height: 260px;
   object-fit: cover;
-  object-position: center 20%; /* THIS is the key */
+  object-position: center 15%; /* THIS is the key */
   display: block;
 }
 
