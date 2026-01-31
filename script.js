@@ -21,7 +21,7 @@ const noFlow = [
   {
     noText: "Nope",
     story: "Alright miss stubborn. But I’m patient.",
-    helper: "Also… your smile in that photo? Yeah. That’s my weakness."
+    helper: "Also… I AM SO IN LOVE WITH YOU! YOU ARE my weakness."
   },
   {
     noText: "Not today",
@@ -40,7 +40,7 @@ const noFlow = [
   },
   {
     noText: "You’re annoying",
-    story: "Correct. But I’m *your* annoying. That’s the point.",
+    story: "Correct. But I’m *your* annoying person. That’s the point.",
     helper: "Ok… I’m about to unlock “Yes”."
   },
   {
@@ -126,12 +126,12 @@ yesBtn.addEventListener("click", () => {
   noBtn.style.opacity = "0.55";
 
   // Optional: customize the final line
-  yayLine.textContent = "Now we’re locked in. I’ll plan it properly. 💐";
+  yayLine.textContent = "Now we’re locked in. I’ll get to planning. 💐";
 
   // Optional: make “Claim your date” open WhatsApp (you can change later)
   // Replace the placeholder with your own WhatsApp link or leave it as a cute button.
   planBtn.onclick = () => {
-    alert("✅ Date claimed. Now send me your availability 😌");
+    alert("✅ Date claimed. Now relax and get excited, be sure to bring a freakum dress for 14th Feb 😌");
     return false;
   };
 });
