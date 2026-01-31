@@ -27,9 +27,9 @@ body {
 
 .heroImg {
   width: 100%;
-  aspect-ratio: 16 / 9;   /* clean cinematic header */
-  object-fit: cover;     /* fills the frame nicely */
-  object-position: center; /* keeps faces centered */
+  height: 260px;
+  object-fit: cover;
+  object-position: center top; /* try: center, center top, center 35% */
   display: block;
 }
 
