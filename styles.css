@@ -27,9 +27,9 @@ body {
 
 .heroImg {
   width: 100%;
-  aspect-ratio: 16 / 9;   /* clean cinematic header */
-  object-fit: cover;     /* fills the frame nicely */
-  object-position: center; /* keeps faces centered */
+  aspect-ratio: 4 / 5;   /* Instagram-style portrait */
+  object-fit: cover;
+  object-position: center;
   display: block;
 }
 
