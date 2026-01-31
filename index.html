@@ -3,34 +3,59 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Natey shikorina, will you be my Valentine?</title>
+    <title>Important question</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <main class="wrap">
-      <h1 id="question">reemy will you be my valentine?</h1>
+    <main class="card">
+      <!-- HERO PHOTO HEADER -->
+      <header class="hero">
+        <img src="our-fave.jpg" alt="Our favourite photo" class="heroImg" />
+        <div class="heroCaption">
+          <span class="pill">Us 🫶</span>
+          <span class="captionText">I made this because you’re my favourite person to annoy (lovingly).</span>
+        </div>
+      </header>
 
-      <div class="btnRow">
-        <button id="yesBtn" class="btn yes">Yes</button>
-        <button id="noBtn" class="btn no">No</button>
+      <h1 id="question">Natey shikorina, will you be my Valentine?</h1>
+
+      <!-- This line evolves as she clicks “No” -->
+      <p id="story" class="story">
+        Before you answer… I just want you to know I actually thought about this. 😄
+      </p>
+
+      <div class="btnZone" id="btnZone">
+        <button id="yesBtn" class="btn yes" disabled>
+          Yes (locked)
+        </button>
+
+        <button id="noBtn" class="btn no">
+          No
+        </button>
       </div>
 
-      <p id="helper" class="helper">“No” seems a bit shy</p>
+      <p id="helper" class="helper">Tip: “No” is safe to press. For now.</p>
 
+      <!-- Success reveal -->
       <section id="yay" class="yay hidden" aria-live="polite">
-        <h2>YAY!</h2>
+        <h2>YAY! 🎉</h2>
+        <p id="yayLine" class="yayLine">
+          Knew you’d come around. I’ll pretend I wasn’t nervous.
+        </p>
 
-        <!-- Swap this to your own image -->
-        <img
-          id="photo"
-          src="our-fave.jpg"
-          alt="Our favourite photo"
-        />
+        <!-- Optional second photo -->
+        <img src="our-fave-2.jpg" alt="Another favourite photo" class="yayImg" />
 
-        <!-- Optional: add fireworks gif too -->
-        <!-- <img class="fireworks" src="fireworks.gif" alt="Fireworks" /> -->
+        <a class="planBtn" id="planBtn" href="#" onclick="return false;">
+          Claim your date 💌
+        </a>
+
+        <p class="tiny">P.S. Screenshot this so you can’t deny it later 😌</p>
       </section>
+
+      <!-- little floating stickers container -->
+      <div id="stickers" class="stickers" aria-hidden="true"></div>
     </main>
 
     <script src="script.js"></script>
